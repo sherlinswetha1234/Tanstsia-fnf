@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Upload</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #00aaff, #e2e4e7, orange);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        .upload-container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .upload-container h1 {
+            margin-bottom: 20px;
+            font-size: 24px;
+            color: #333;
+        }
+
+        .upload-container input[type="file"] {
+            margin-bottom: 20px;
+        }
+
+        .upload-container button {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .upload-container button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="upload-container">
+        <h1>Upload Your Photos</h1>
+        <form action="upload.php" method="POST" enctype="multipart/form-data">
+            <input type="file" name="photos[]" accept="image/*" multiple required><br><br>
+            <input type="file" name="photos[]" accept="image/*" multiple required><br><br>
+            <input type="file" name="photos[]" accept="image/*" multiple required><br><br>
+            <button type="submit">Upload Photos</button>
+        </form>
+    </div>
+    <script>
+        window.addEventListener("load", function() {
+    var form = document.getElementById("registrationForm");
+    if (form) {
+        var inputs = form.querySelectorAll("input, select");
+
+        inputs.forEach(function(input) {
+            var value = sessionStorage.getItem(input.name);
+            if (value !== null) {
+                if (input.type === "checkbox" || input.type === "radio") {
+                    input.checked = (value === "on" || value === "true");
+                } else {
+                    input.value = value;
+                }
+            }
+        });
+    }
+});
+
+    </script>
+</body>
+</html>
