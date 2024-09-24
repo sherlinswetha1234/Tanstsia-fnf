@@ -1,0 +1,118 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #00aaff, #e2e4e7, orange);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Container Styling */
+.container {
+    background-color: #ffffff;
+    padding: 30px 20px; /* Adjusted padding */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+/* Heading Styling */
+h1 {
+    margin-bottom: 15px; /* Reduced margin */
+    color: #007bff;
+    font-size: 30px; /* Slightly smaller font size */
+    border-bottom: 2px solid rgba(5, 5, 5, 0.733);
+    padding-bottom: 8px; /* Adjusted padding */
+}
+
+/* Form Group Styling */
+.form-group {
+    margin-bottom: 15px; /* Reduced margin */
+    text-align: left;
+    border: 1px solid #ccc;
+    padding: 15px; /* Adjusted padding */
+    border-radius: 4px;
+}
+
+/* Label Styling */
+label {
+    font-size: 18px; /* Slightly smaller font size */
+    color: #333333;
+    margin-bottom: 5px; /* Reduced margin */
+    display: block;
+}
+
+/* Input Styling */
+input[type="email"], input[type="text"], textarea {
+    width: 100%;
+    padding: 10px; /* Adjusted padding */
+    margin: 5px 0; /* Reduced margin */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 14px; /* Slightly smaller font size */
+    transition: border-color 0.3s;
+}
+
+/* Input Focus Effect */
+input[type="email"]:focus, input[type="text"]:focus, textarea:focus {
+    box-shadow: 0 0 10px rgba(255, 165, 0, 0.5);
+    outline: none;
+}
+
+/* Button Styling */
+button {
+    width: 100%;
+    background-color: #007bff;
+    color: white;
+    padding: 12px; /* Adjusted padding */
+    margin-top: 15px; /* Adjusted margin */
+    margin-bottom: 10px; /* Adjusted margin */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px; /* Slightly smaller font size */
+    transition: background-color 0.3s;
+}
+
+/* Button Hover Effect */
+button:hover {
+    background-color: #ffa500;
+}
+
+/* Link Styling */
+a {
+    color: #ff9d00;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Additional Styling */
+.container::before {
+    content: "";
+    width: 60px; /* Reduced width */
+    height: 4px;
+    background-color: #007bff;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 2px;
+}
+
+
+
