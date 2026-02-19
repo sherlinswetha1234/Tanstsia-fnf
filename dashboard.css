@@ -1,0 +1,80 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #74ebd5, #ACB6E5);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Container (same as login) */
+.register-container {
+    background: #fff;
+    padding: 30px;
+    width: 350px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    text-align: center;
+}
+
+/* Title */
+.register-container h2 {
+    margin-bottom: 20px;
+    color: #1e73e8;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 10px;
+}
+
+/* Labels */
+.register-container label {
+    display: block;
+    text-align: left;
+    margin-top: 10px;
+    font-weight: 500;
+}
+
+/* Inputs */
+.register-container input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    outline: none;
+    transition: 0.3s;
+}
+
+.register-container input:focus {
+    border-color: #1e73e8;
+}
+
+/* Button */
+.register-container button {
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    background: #1e73e8;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.register-container button:hover {
+    background: #155ab6;
+}
+
+/* Link */
+.register-container a {
+    display: block;
+    margin-top: 10px;
+    color: #1e73e8;
+    text-decoration: none;
+}
+
+.register-container a:hover {
+    text-decoration: underline;
+}
